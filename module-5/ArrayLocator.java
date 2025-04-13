@@ -1,5 +1,12 @@
+// Jacob Achenbach 4/13/2025
+
+// Simple scan for 2D array's tp find the largest and smallest value and returns a 2-element array.
+
+
+
 public class ArrayLocator {
 
+    // Largest double
     public static int[] locateLargest(double[][] arrayParam) {
         int[] location = new int[2];
         double max = arrayParam[0][0];
@@ -15,6 +22,7 @@ public class ArrayLocator {
         return location;
     }
 
+    // Largest int
     public static int[] locateLargest(int[][] arrayParam) {
         int[] location = new int[2];
         int max = arrayParam[0][0];
@@ -30,6 +38,7 @@ public class ArrayLocator {
         return location;
     }
 
+    // Smallest double
     public static int[] locateSmallest(double[][] arrayParam) {
         int[] location = new int[2];
         double min = arrayParam[0][0];
@@ -45,6 +54,7 @@ public class ArrayLocator {
         return location;
     }
 
+    // Smallest int
     public static int[] locateSmallest(int[][] arrayParam) {
         int[] location = new int[2];
         int min = arrayParam[0][0];
@@ -60,7 +70,7 @@ public class ArrayLocator {
         return location;
     }
 
-    // Optional: Main method to test
+    // Main method to test
     public static void main(String[] args) {
         int[][] intArr = {
             {3, 5, 9},
